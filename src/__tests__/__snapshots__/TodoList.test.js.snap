@@ -1,19 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[object Object] render matches snapshot 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      name="name"
-      onChange={[Function]}
-      placeholder="Add Item"
-      required={true}
-      value=""
-    />
-  </form>
-  <hr />
-  <ul />
-</div>
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(TodoList)>
+    <TodoList
+      dispatch={[Function]}
+      items={Array []}
+    >
+      <div>
+        <form
+          onSubmit={[Function]}
+        >
+          <input
+            name="name"
+            onChange={[Function]}
+            placeholder="Add Item"
+            required={true}
+            value=""
+          />
+        </form>
+        <hr />
+        <ul />
+      </div>
+    </TodoList>
+  </Connect(TodoList)>
+</Provider>
 `;
